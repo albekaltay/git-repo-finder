@@ -1,0 +1,74 @@
+.tableFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  font-size: 14px;
+  font-weight: 400;
+  border-top: 1px solid var(--neutral-700);
+  gap: 22px;
+  justify-content: flex-end;
+  align-items: center;
+
+  min-height: 60px;
+  background-color: var(--neutral-900);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .tableFooter {
+    flex-direction: row;
+    padding: 10px;
+  }
+}
+
+
+
+.tableFooterButton {
+  background-color: transparent;
+  border: 1px solid var(--neutral-700);
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 4px;
+  color: var(--neutral-400);
+}
+
+.tableFooterButton:hover {
+  background-color: var(--neutral-900);
+}
+
+.tableFooterPagination {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+.tableFooterPaginationButtonGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+}
+
+.paginationIcon {
+  filter: invert(48%) sepia(9%) saturate(498%) hue-rotate(182deg)
+    brightness(94%) contrast(90%);
+}
+
+
+.rowsPerPage {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rowsPerPageSelect {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: var(--neutral-900);
+  cursor: pointer;
+  color: var(--neutral-400);
+}

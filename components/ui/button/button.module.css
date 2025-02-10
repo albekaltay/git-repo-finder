@@ -1,0 +1,29 @@
+.button {
+  padding: 0.5rem 3rem;
+  background-color: var(--neutral-950);
+  color: var(--neutral-50);
+  border: 1px solid var(--neutral-800);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0.6rem 4rem;
+  }
+}
+
+.button:hover:not(:disabled) {
+  background-color: var(--neutral-800);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

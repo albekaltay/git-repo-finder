@@ -34,3 +34,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Description
+
+The project has been deployed via Vercel. The case study was developed using Next.js, React, Module CSS, and RTK Query within Redux, utilizing the specified GitHub Developer API. Efforts were made to ensure a clean and user-friendly design while maintaining responsiveness. Code cleanliness and performance were prioritized, leveraging RTK Query’s caching and refetch advantages. TypeScript was used throughout the project to enhance type safety and maintainability.
+
+On the main page, users are presented with a table where they can browse GitHub repositories. Three radio buttons allow users to filter repositories by programming language—JavaScript, Scala, and Python—with JavaScript selected by default. Additionally, a search input enables users to filter repositories based on keywords. This search operates automatically without a submit button, fetching results dynamically as the user types.
+
+Sorting functionality has been implemented for stars, forks, and the last update date. Sorting is not performed on the client side but instead triggers a new data request to the API, ensuring up-to-date results. Pagination has also been integrated to enhance usability.
+
+State persistence has been applied, ensuring that user preferences—including selected language, search input, sorting options, and pagination state—are preserved even after the page is closed and reopened.
+
+The project follows best practices for modern frontend development. The file structure is well-organized, with type definitions stored separately for maintainability. Authentication has been implemented using NextAuth and GitHub OAuth.Tests were written using Jest to ensure the reliability of core functionalities. Finally, linting checks were performed before deployment to ensure code quality.
+
+It was an enjoyable project—thank you!

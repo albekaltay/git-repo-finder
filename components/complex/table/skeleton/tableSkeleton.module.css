@@ -1,0 +1,161 @@
+.skeletonContainer {
+  width: 100%;
+}
+
+.filterSkeleton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchSkeleton {
+  width: 200px;
+  height: 40px;
+  background: var(--neutral-900);
+  border-radius: 8px;
+  animation: pulse 1.5s infinite;
+}
+
+.filterButtonsSkeleton {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.languageSelectorSkeleton {
+  display: flex;
+  gap: 20px;
+}
+
+.radioSkeleton {
+  width: 80px;
+  height: 20px;
+  background: var(--neutral-900);
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+
+.resetButtonSkeleton {
+  width: 100px;
+  height: 36px;
+  background: var(--neutral-900);
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+
+.tableSkeleton {
+  border: 0.5px solid var(--neutral-700);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1fr 2fr 0.8fr 0.8fr 0.8fr;
+  gap: 8px;
+  padding: 12px;
+  background: var(--neutral-900);
+}
+
+.headerCell {
+  height: 24px;
+  background: var(--neutral-800);
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+
+.tableBody {
+  background: var(--neutral-950);
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1fr 2fr 0.8fr 0.8fr 0.8fr;
+  gap: 8px;
+  padding: 12px;
+  border-bottom: 1px solid var(--neutral-700);
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.tableCell {
+  height: 20px;
+  background: var(--neutral-900);
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+
+.descriptionCell {
+  height: 20px;
+}
+
+.tableFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: var(--neutral-900);
+  border-top: 1px solid var(--neutral-700);
+  gap: 10px;
+}
+
+
+@media (min-width: 768px) {
+  .tableFooter {
+    flex-direction: row;
+    gap: 0px;
+  }
+}
+
+
+
+.rowsPerPageSkeleton {
+  width: 120px;
+  height: 32px;
+  background: var(--neutral-800);
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+
+.paginationSkeleton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pageInfoSkeleton {
+  width: 100px;
+  height: 20px;
+  background: var(--neutral-800);
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+
+.pageButtonsSkeleton {
+  display: flex;
+  gap: 8px;
+}
+
+.pageButtonSkeleton {
+  width: 32px;
+  height: 32px;
+  background: var(--neutral-800);
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.6;
+  }
+} 

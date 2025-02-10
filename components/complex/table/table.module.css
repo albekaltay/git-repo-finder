@@ -1,0 +1,125 @@
+.tableContainer {
+  width: 100%;
+  border: 0.5px solid var(--neutral-700);
+  border-radius: 8px;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  
+  /* Webkit scroll bar özelleştirmeleri */
+  &::-webkit-scrollbar {
+    height: 8px;
+    background-color: var(--neutral-900);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--neutral-700);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: var(--neutral-600);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--neutral-900);
+    border-radius: 4px;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+}
+
+
+.tableHeader {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--neutral-700);
+  font-weight: 500;
+  font-size: 14px;
+  background-color: var(--neutral-900);
+}
+
+.tableHeaderRight {
+  text-align: right;
+}
+
+.tableRow {
+  border-bottom: 1px solid var(--neutral-700);
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.tableCell {
+  padding: 10px 8px;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tableCellRight {
+  text-align: right;
+}
+
+.tableRow:hover {
+  background-color: var(--neutral-900);
+  opacity: 0.8;
+}
+
+
+.sortable {
+  cursor: pointer;
+  user-select: none;
+  color: var(--neutral-400);
+}
+
+.sortable:hover {
+  background-color: var(--neutral-800);
+  color: var(--neutral-50);
+}
+
+.sortIcon {
+  opacity: 0;
+  margin-right: 4px;
+  display: inline-block;
+  transition: all 0.2s ease;
+  
+}
+
+.sortIcon.asc {
+  transform: rotate(0deg);
+}
+
+.sortIcon.desc {
+  transform: rotate(180deg);
+}
+
+.sortable:hover .sortIcon,
+.sortIcon[data-active="true"] {
+  opacity: 1;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.sortIconImage {
+  filter: invert(48%) sepia(9%) saturate(498%) hue-rotate(182deg) brightness(94%) contrast(90%);
+}
+
